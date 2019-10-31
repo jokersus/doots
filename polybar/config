@@ -25,6 +25,8 @@ height = 36
 radius = 0.0
 fixed-center = true
 
+separator = |
+
 background = ${colors.background}
 foreground = ${colors.foreground}
 
