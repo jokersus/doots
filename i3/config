@@ -164,7 +164,7 @@ mode "resize"
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+x exec i3lock-fancy -p -t "System Locked Down"
+bindsym $mod+x exec i3lock-fancy
 
 bindsym --release Print exec scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
 
