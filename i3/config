@@ -181,6 +181,9 @@ exec_always --no-startup-id ~/.config/ui-update.sh &
 exec --no-startup-id compton --config ~/.config/compton/config -b
 
 exec --no-startup-id unclutter --timeout 3 &
+
+exec_always mpd
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
