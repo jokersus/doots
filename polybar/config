@@ -43,8 +43,8 @@ module-margin-right = 3
 font-0 = "Ubuntu Nerd Font:style=Regular:size=10:antialias=true;1"
 
 modules-left = i3 xwindow
-modules-center = date
 modules-right = xkeyboard pulseaudio network memory cpu temperature powermenu
+; modules-center = mpd
 
 tray-position = right
 tray-padding = 2
@@ -241,3 +241,34 @@ screenchange-reload = true
 [global/wm]
 margin-top = 0
 margin-bottom = 0
+
+[module/mpd]
+type = internal/mpd
+
+; Host where mpd is running (either ip or domain name)
+; Can also be the full path to a unix socket where mpd is running.
+host = 127.0.0.1
+port = 6600
+; password = mysecretpassword
+
+Awesome Font >                    
+
+format-online =  <label-song> <icon-prev>  <icon-seekb>  <icon-stop>  <toggle>  <icon-seekf>  <icon-next>  <icon-repeat>  <icon-random>
+
+label-offline = mpd is offline
+
+label-song =  %artist% - %title%
+; Awesome Font >                    
+icon-play = 
+icon-pause = 
+icon-stop =  
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 
+icon-repeatone = 
+
+toggle-on-foreground = #ff
+toggle-off-foreground = #55
