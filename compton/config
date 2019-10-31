@@ -15,7 +15,7 @@ opacity-rule =
 ];
 
 # workspace opacity transition for i3
-fading = true;
+fading = false;
 fade-delta = 2.1;
 fade-in-step = 0.03;
 fade-out-step = 0.03;
