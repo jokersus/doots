@@ -166,7 +166,9 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+x exec i3lock-fancy
 
-bindsym --release Print exec scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
+# bindsym --release Print exec scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
+
+bindsym $mod+Print exec flameshot gui
 
 new_window pixel 0
 
