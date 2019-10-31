@@ -175,7 +175,11 @@ animation-packetloss-0-foreground = ${colors.foreground-alt}
 animation-packetloss-1 = a
 animation-packetloss-1-foreground = #000000
 ; Framerate in milliseconds
+animation-packetloss-framerate = 500
+
 [module/wireless-network]
+type = internal/network
+interface = idk
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
