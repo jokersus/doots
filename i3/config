@@ -204,3 +204,5 @@ bindsym $mod+minus scratchpad show
 # Show the sup-mail scratchpad window, if any. (don't know what this does)
 # bindsym mod4+s [title="^Sup ::"] scratchpad show
 
+# Sticky window
+bindsym $mod+plus sticky toggle
