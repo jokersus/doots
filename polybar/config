@@ -216,6 +216,10 @@ label = %date% %time%
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
+interval = 0.5
+
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon0/temp1_input
+
 warn-temperature = 55
 
 format = <ramp> <label>
