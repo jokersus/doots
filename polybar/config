@@ -184,7 +184,7 @@ animation-packetloss-framerate = 500
 
 [module/wireless-network]
 type = internal/network
-interface = idk
+interface = wlp32s0f3u3
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
