@@ -5,5 +5,7 @@ set fish_greeting
 
 # aliases
 alias meow "cat"
+alias paclast "expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n "
+
 # export
 export EDITOR=nano
