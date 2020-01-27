@@ -206,3 +206,9 @@ bindsym $mod+minus scratchpad show
 
 # Sticky window
 bindsym $mod+plus sticky toggle
+
+# xrdb:color1:#222
+set_from_resource $color0 i3wm.color1 
+# client.focused #fcba03 #fcba03 #fcba03 #fcba03 #fcba03
+client.focused $color1 $color1 $color1 $color1 $color1
+for_window [class="^.*"] border pixel 2
