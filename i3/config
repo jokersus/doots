@@ -176,8 +176,8 @@ new_window pixel 0
 gaps inner 12
 gaps outer 0
 
-assign [class="Atom"] $ws2
-assign [class="Firefox"] $ws3
+#assign [class="Atom"] $ws2
+#assign [class="Firefox"] $ws3
 
 exec_always --no-startup-id ~/.config/ui-update.sh &
 
