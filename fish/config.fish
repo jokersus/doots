@@ -3,3 +3,5 @@
 
 # aliases
 alias meow "cat"
+# export
+export EDITOR=nano
