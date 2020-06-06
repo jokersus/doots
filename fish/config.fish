@@ -5,6 +5,7 @@
 set fish_greeting
 bind \e\x7F 'backward-kill-word'
 bind \e\b 'backward-kill-word'
+set TERM xterm
 
 # aliases
 alias meow "cat"
