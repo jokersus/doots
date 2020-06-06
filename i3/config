@@ -240,3 +240,19 @@ set_from_resource $color0 i3wm.color1
 # client.focused #fcba03 #fcba03 #fcba03 #fcba03 #fcba03
 client.focused $color1 $color1 $color1 $color1 $color1
 for_window [class="^.*"] border pixel 2
+# Gaps
+bindsym $mod+Control+Up  	gaps inner current plus 5
+bindsym $mod+Control+Down	gaps inner current minus 5
+
+bindsym $mod+Mod1+Up		gaps outer current plus 5
+bindsym $mod+Mod1+Down	       	gaps outer current minus 5
+
+bindsym $mod+Control+Left        gaps inner current set 12
+bindsym $mod+Control+Right       gaps inner current set 0
+
+bindsym $mod+Mod1+Left            gaps outer current set 0
+bindsym $mod+Mod1+Right           gaps outer current set 0
+
+bindsym $mod+Control+Mod1+Left	  gaps inner current set 12; gaps outer current set 0;
+bindsym $mod+Control+Mod1+Right   gaps inner current set 12; gaps outer current set 0;
+
