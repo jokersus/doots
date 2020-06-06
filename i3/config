@@ -202,7 +202,7 @@ exec_always --no-startup-id ~/.config/ui-update.sh &
 
 exec --no-startup-id picom --config ~/.config/picom/config -b
 
-exec --no-startup-id unclutter --timeout 3 &
+# exec --no-startup-id unclutter --timeout 3 &
 
 exec_always mpd
 
