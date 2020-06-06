@@ -204,7 +204,8 @@ exec --no-startup-id picom --config ~/.config/picom/config -b
 
 # exec --no-startup-id unclutter --timeout 3 &
 
-exec_always mpd
+
+exec --no-startup-id mpd
 
 # exec --no-startup-id wal -i /home/jokersus/Pictures/wallhaven-8396gk.jpg
 # exec --no-startup-id wal -i /home/jokersus/Pictures/wallpaper_3.jpg
