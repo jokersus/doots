@@ -212,6 +212,9 @@ exec --no-startup-id mpd
 # exec --no-startup-id wal -i /home/jokersus/Pictures/wallhaven-8396gk.jpg
 # exec --no-startup-id wal -i /home/jokersus/Pictures/wallpaper_3.jpg
 
+exec_always --no-startup-id "~/.config/i3/scripts/i3-alternating-layout/alternating_layouts.py &>> ~/Documents/i3script.laaaaaag"
+
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume jack_out +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume jack_out -5% #decrease sound volume
@@ -240,6 +243,13 @@ set_from_resource $color0 i3wm.color1
 # client.focused #fcba03 #fcba03 #fcba03 #fcba03 #fcba03
 client.focused $color1 $color1 $color1 $color1 $color1
 for_window [class="^.*"] border pixel 2
+
+# Fibonacci
+#default_orientation vertical #start in opposite orientation from your monitor
+#for_window [class=".*"] split toggle #toggles split at each new window
+#bindsym $mod+shift+q split toggle kill #kill command resets the split
+# bindsym $mod+e layout toggle split # should already exist but use if split orientation  messes up
+
 # Gaps
 bindsym $mod+Control+Up  	gaps inner current plus 5
 bindsym $mod+Control+Down	gaps inner current minus 5
