@@ -5,6 +5,8 @@
 set fish_greeting
 bind \e\x7F 'backward-kill-word'
 bind \e\b 'backward-kill-word'
+set -g theme_show_exit_status yes
+set -g theme_color_scheme terminal2
 set TERM xterm
 
 # aliases
