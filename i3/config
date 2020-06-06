@@ -217,6 +217,12 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume jack_out
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume jack_out -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute jack_out toggle # mute sound
 
+# MPD audio controls
+bindsym XF86AudioPlay exec "mpc toggle"
+bindsym XF86AudioStop exec "mpc stop"
+bindsym XF86AudioNext exec "mpc next"
+bindsym XF86AudioPrev exec "mpc prev"
+
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
 
