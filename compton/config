@@ -7,18 +7,20 @@ xrender-sync = true;
 xrender-sync-fence = true;
 
 # transparancy settings for i3
-opacity-rule =
-[
-    "0:_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'",
-	"90:class_g = 'termite' && focused",
-	"0:class_g = 'termite' && !focused"
+opacity-rule = [
+  "90:class_g = 'kitty' && focused",
+  "90:class_g = 'kitty' && !focused",
+  "98:class_g = 'discord' && focused",
+  "98:class_g = 'discord' && !focused",
 ];
+
+#opacity-rule = ["90:class_g = 'google-chrome'"];
 
 # workspace opacity transition for i3
 fading = false;
-fade-delta = 2.1;
-fade-in-step = 0.03;
-fade-out-step = 0.03;
+#fade-delta = 2.1;
+#fade-in-step = 0.03;
+#fade-out-step = 0.03;
 
 # window shadows for i3
 shadow = true;
@@ -28,3 +30,8 @@ clear-shadow = true;
 shadow-radius = 7;
 shadow-offset-x = -7;
 shadow-offset-y = -7;
+
+# opacity
+#menu-opacity = 0.8;
+#inactive-opacity = 0.8;
+#active-opacity = 0.8;
