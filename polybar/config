@@ -52,7 +52,7 @@ font-3 = "Ubuntu Nerd Font:style=Regular:size=10:antialias=true;1"
 
 modules-left = i3 xwindow
 modules-center = mpd
-modules-right = xkeyboard pulseaudio0 pulseaudio wired-network wireless-network memory cpu temperature date powermenu
+modules-right = xkeyboard pulseaudio0 pulseaudio wired-network memory cpu temperature date powermenu
 
 tray-position = right
 tray-padding = 2
