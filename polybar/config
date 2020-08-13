@@ -59,10 +59,10 @@ tray-padding = 2
 
 wm-restack = i3
 
-;override-redirect = true
+; override-redirect = true
 
-scroll-up = i3wm-wsprev
-scroll-down = i3wm-wsnext
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 [module/xwindow]
 type = internal/xwindow
@@ -184,8 +184,20 @@ animation-packetloss-framerate = 500
 
 [module/wireless-network]
 type = internal/network
-interface = wlp32s0f3u3
+interface = wlp3s0f0u1
 interval = 3.0
+
+label-connected = %downspeed%  %upspeed%
+
+format-packetloss = <animation-packetloss> <label-connected>
+
+; Only applies if <animation-packetloss> is used
+animation-packetloss-0 = ⚠
+animation-packetloss-0-foreground = #ffa64c
+animation-packetloss-1 = 📶
+animation-packetloss-1-foreground = #000000
+; Framerate in milliseconds
+animation-packetloss-framerate = 500
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #00000000
