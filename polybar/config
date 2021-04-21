@@ -25,6 +25,8 @@ height = 36
 radius = 0.0
 fixed-center = true
 
+monitor = DP-2
+
 separator = |
 
 background = ${colors.background}
@@ -43,16 +45,19 @@ module-margin-left = 3
 module-margin-right = 3
 
 font-0 = "Ubuntu Nerd Font:style=Regular:size=10:antialias=true;1"
-font-1 = "Material Icons:style=Regular:size=13:antialias=true;3"
-font-2 = "Weather Icons:size12;0"
-font-3 = "Ubuntu Nerd Font:style=Regular:size=10:antialias=true;1"
+font-2 = "MaterialIcons-Regular:style=Regular:size=10:antialias=true;0"
+;font-1 = "Material Icons:style=Regular:size=12:antialias=true;3"
+;font-2 = "Material Icons:style=Regular:size=10:antialias=true;2"
+;font-2 = "Weather Icons:size12;0"
+;font-1 = "Ubuntu Nerd Font:style=Regular:size=10:antialias=true;1"
+;font-4 = "Material Icons:style=Regular:size=100:antialias=true"
 
-; font-1 = "Mono:style=Regular:size=10:antialias=true;1"
-; font-2 = "Noto Color Emoji:pixelsize=16:style=Regular;2"
+;font-1 = "Mono:style=Regular:size=10:antialias=true;1"
+;font-1 = "Noto Color Emoji:size=16:style=Regular;2"
 
 modules-left = i3 xwindow
 modules-center = mpd
-modules-right = xkeyboard pulseaudio0 pulseaudio wired-network memory cpu temperature date powermenu
+modules-right = xkeyboard pulseaudio wired-network memory cpu temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -117,7 +122,10 @@ label-urgent-padding = 4
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "%{T2} "
+;format-prefix = "%{T2} "
+format-prefix = "%{T2} "
+;format-prefix = "%{T2} "
+;format-prefix = "C "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #00000000
 label = %percentage%%
@@ -126,8 +134,9 @@ label = %percentage%%
 type = internal/memory
 interval = 2
 ; format-prefix = %{T2}
-format-prefix = "%{T2} "
+; format-prefix = "%{T2} "
 ; format-prefix-font = 1
+format-prefix = "M "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #00000000
 label = %percentage_used%%
@@ -150,7 +159,8 @@ format-prefix-foreground = ${colors.foreground-alt}
 ; label-ethernet = "%{T2} aaa"
 
 ; label-connected = %local_ip%  %downspeed%  %upspeed% 
-label-connected = %downspeed%  %upspeed%
+;label-connected = %downspeed%  %upspeed%
+label-connected = %downspeed%  %upspeed%
 format-label-connected-font = 1
 ; label-connected-foreground = #eefafafa
 
@@ -316,6 +326,7 @@ ramp-volume-foreground = ${colors.foreground}
 
 ramp-volume-0 = "%{T2}"
 ramp-volume-1 = "%{T2}"
+;ramp-volume-1 = "%{T2} "
 ramp-volume-2 = "%{T2}"
 
 format-muted = <ramp-volume> <label-muted>
@@ -355,7 +366,7 @@ host = 127.0.0.1
 port = 6600
 ; password = mysecretpassword
 
-Awesome Font >                    
+; Awesome Font >                    
 
 format-online =  <label-song> <icon-prev>  <icon-seekb>  <icon-stop>  <toggle>  <icon-seekf>  <icon-next>  <icon-repeat>  <icon-random>
 
