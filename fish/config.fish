@@ -10,6 +10,7 @@ set -g theme_color_scheme terminal2
 set TERM xterm
 
 # aliases
+alias yay "yay --editmenu"
 alias meow "cat"
 alias paclast "expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n "
 
