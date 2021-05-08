@@ -4,3 +4,5 @@ rofi.theme:         sidebar
 rofi.font:          source code pro medium 10
 rofi.theme:         ~/.cache/wal/colors-rofi-dark.rasi
 rofi.terminal:	    urxvtc
+rofi.ssh-client:    ssh
+rofi.ssh-command:   {terminal} -e {ssh-client} {host}
