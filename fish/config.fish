@@ -1,6 +1,8 @@
 # wal -e -i /home/jokersus/Pictures/wallhaven-8396gk.jpg > /dev/null 2>&1
 # cat ~/.cache/wal/sequences &
 
+umask 077
+
 # sanity stuff
 set fish_greeting
 bind \e\x7F 'backward-kill-word'
