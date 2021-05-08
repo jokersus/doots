@@ -15,6 +15,7 @@ set TERM xterm
 alias yay "yay --editmenu"
 alias meow "cat"
 alias paclast "expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n "
+alias l "ls -lha"
 
 # export
 export EDITOR=nano
