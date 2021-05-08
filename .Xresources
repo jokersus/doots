@@ -1,3 +1,64 @@
-URxvt*scrollBar:  false
-URxvt*internalBorder: 42
-URxvt*font: xft:ubuntumononerdfont:size=12:antialias=true
+#include "/home/jokersus/.cache/wal/colors.Xresources"
+
+URxvt.scrollBar: false
+
+! Copy-paste
+
+!URxvt.perl-ext-common: selection-to-clipboard
+
+! URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+! URxvt.keysym.Shift-Control-C: eval:copy
+
+!URxvt.keysym.Control-Meta-c: builtin-string:
+!URxvt.keysym.Control-Meta-v: builtin-string:
+
+
+! Fonts or whatever
+!URxvt.font:     xft:source code pro medium:style=Medium:size=13
+
+!URxvt.font: xft:FuraCode Nerd Font:style=Regular:size=15
+
+!URxvt*font	xft:Fira Code:size=30
+
+!URxvt.font:             xft:InconsolataGo Nerd Font:size=15
+URxvt.font:            xft:DejaVu Sans Mono:autohint=true:size=12,                  xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:Source Code Pro:autohint=true:size=12
+URxvt.boldFont:        xft:DejaVu Sans Mono:autohint=true:style=Bold:size=12,       xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:source code pro medium:autohint=true:size=12
+URxvt.italicFont:      xft:DejaVu Sans Mono:autohint=true:stlye=Oblique:size=12,    xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:source code pro medium:autohint=true:size=12
+URxvt.boldItalicFont:  xft:DejaVu Sans Mono:autohint=true:style=BoldObliquesize=12, xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:source code pro medium:autohint=true:size=12
+
+! Perl stuff
+! URxvt.perl-ext-common:	resize-font
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Autoscroll stuff
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-Shift-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: /usr/bin/firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+!! Savelines
+!! 1 million
+URxvt.savelines: 1000000
+
+! Navigation buttons
+urxvt.keysym.Home:          \033[1~
+urxvt.keysym.End:           \033[4~
+urxvt.keysym.Control-Up:    \033[1;5A
+urxvt.keysym.Control-Down:  \033[1;5B
+urxvt.keysym.Control-Left:  \033[1;5D
+urxvt.keysym.Control-Right: \033[1;5C
