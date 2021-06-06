@@ -56,7 +56,7 @@ font-2 = "MaterialIcons-Regular:style=Regular:size=10:antialias=true;0"
 ;font-1 = "Noto Color Emoji:size=16:style=Regular;2"
 
 modules-left = i3 xwindow
-modules-center = mpd
+; modules-center = mpd
 modules-right = xkeyboard pulseaudio wired-network memory cpu temperature date powermenu
 
 tray-position = right
