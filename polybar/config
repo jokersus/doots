@@ -235,6 +235,7 @@ time = %H:%M:%S
 time-alt = %H:%M:%S
 
 format-prefix = 
+;format-prefix-foreground = ${colors.alert}
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #00000000
 
