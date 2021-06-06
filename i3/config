@@ -110,6 +110,8 @@ set $ws7    7: 7
 set $ws8    8: 8
 set $ws9    9: 9
 set $ws10   10: 10
+set $wsp1   88: 88
+set $wsp2   99: 99
 
 # multiple monitors
 set $firstMonitor DP-2
@@ -125,6 +127,9 @@ workspace 7 output $secondMonitor
 workspace 8 output $secondMonitor
 workspace 9 output $secondMonitor
 workspace 10 output $secondMonitor
+workspace 88 output $firstMonitor
+workspace 99 output $secondMonitor
+
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -190,6 +195,7 @@ bindsym $mod+x exec i3lock -t -i ~/Pictures/Wallpapers/diablur.png
 # bindsym --release Print exec scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
 
 bindsym $mod+Print exec flameshot gui
+bindsym $mod+Shift+Print exec peek
 
 new_window pixel 0
 
@@ -267,3 +273,5 @@ bindsym $mod+Mod1+Right           gaps outer current set 0
 bindsym $mod+Control+Mod1+Left	  gaps inner current set 12; gaps outer current set 0;
 bindsym $mod+Control+Mod1+Right   gaps inner current set 12; gaps outer current set 0;
 
+# Panic script. Opens some terminals
+bindsym $mod+P exec --no-startup-id ~/.config/i3/scripts/panic/panic.sh
