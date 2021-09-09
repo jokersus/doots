@@ -16,6 +16,8 @@ alias meow "cat"
 alias paclast "expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n "
 alias l "ls -lha"
 
+alias ls "exa --group-directories-first --icons"
+
 # export
 export EDITOR=nano
 
