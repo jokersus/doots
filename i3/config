@@ -207,7 +207,8 @@ gaps outer 0
 
 exec_always --no-startup-id ~/.config/ui-update.sh &
 
-exec --no-startup-id picom --config ~/.config/picom/config -b
+#exec --no-startup-id picom --config ~/.config/picom/config -b
+exec_always --no-startup-id xcompmgr
 
 # exec --no-startup-id unclutter --timeout 3 &
 
