@@ -8,5 +8,8 @@ i3-msg workspace 99
 i3-msg 'workspace 88; exec urxvtc -e gotop'
 i3-msg 'workspace 99; exec urxvtc -e nvtop; exec urxvtc -e htop'
 
+killall polybar
+
+# Mute active sink
 SINK=$(pactl list short | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,')
 pactl set-sink-mute $SINK on
