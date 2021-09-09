@@ -1,5 +1,13 @@
 #include "/home/jokersus/.cache/wal/colors.Xresources"
 
+!URxvt.transparent:   true
+!URxvt.shading:       20
+
+!URxvt.foreground: #eeeeee
+
+!URxvt.depth: 32
+!URxvt.background: [75]#0e192e
+
 URxvt.scrollBar: false
 URxvt.letterSpace: -1
 
