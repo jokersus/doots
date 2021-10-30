@@ -232,7 +232,7 @@ mode "resize"
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+x exec i3lock -t -i ~/Pictures/Wallpapers/diablur.png
+bindsym $mod+x exec i3lock -t -i ~/Pictures/Wallpapers/49mmoe8eum531_blur.png
 
 # bindsym --release Print exec scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
 
