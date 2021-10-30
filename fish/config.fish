@@ -19,7 +19,7 @@ alias l "ls -lha"
 alias ls "exa --group-directories-first --icons"
 
 # export
-export EDITOR=nano
+export EDITOR=vim
 
 function __fish_command_not_found_handler --on-event fish_command_not_found
     echo "fish: Unknown command '$argv'"
