@@ -26,3 +26,5 @@ function __fish_command_not_found_handler --on-event fish_command_not_found
 end
 
 # set fish_color_command blue
+
+set __done_min_cmd_duration 5000 
