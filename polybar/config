@@ -207,7 +207,7 @@ animation-packetloss-framerate = 500
 
 [module/wireless-network]
 type = internal/network
-interface = wlp3s0f0u1
+interface = wlp42s0f3u3
 interval = 3.0
 
 label-connected = %downspeed%  %upspeed%
