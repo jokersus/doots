@@ -3,5 +3,6 @@
 wal -a 90 -i ~/Pictures/Wallpapers/random
 
 ~/.config/polybar/polybar.sh &
-~/.config/dunst/dunst.sh
+dunst -conf ~/.config/dunst/dunstrc_xr_colors &
+# ~/.config/dunst/dunst.sh
 #~/.config/firefoxChrome.sh
