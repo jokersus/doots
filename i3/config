@@ -318,3 +318,5 @@ bindsym $mod+Control+Mod1+Right   gaps inner current set 12; gaps outer current 
 
 # Panic script. Opens some terminals
 bindsym $mod+P exec --no-startup-id ~/.config/i3/scripts/panic/panic.sh
+
+bindsym Control+grave exec --no-startup-id dunstctl history-pop
