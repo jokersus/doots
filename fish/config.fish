@@ -18,6 +18,11 @@ alias l "ls -lha"
 
 alias ls "exa --group-directories-first --icons"
 
+# ranger cd
+# See https://github.com/limakzi/fisher-ranger-cd
+# alias ranger "__ranger_cd"
+alias ranger='ranger --choosedir=/tmp/.rangerdir; cd (cat /tmp/.rangerdir)'
+
 # export
 export EDITOR=vim
 
