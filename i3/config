@@ -130,23 +130,21 @@ set $ws19    19: 19
 set $ws20    20: 20
 
 # multiple monitors
-set $firstMonitor DP-2
-set $secondMonitor HDMI-0
+set $firstMonitor eDP
+set $secondMonitor HDMI-A-0
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
 workspace 3 output $firstMonitor
 workspace 4 output $firstMonitor
-#workspace 3 output $firstMonitor
-#workspace 4 output $firstMonitor
-#workspace 5 output $firstMonitor
-#workspace 6 output $secondMonitor
-#workspace 7 output $secondMonitor
-#workspace 8 output $secondMonitor
-#workspace 9 output $secondMonitor
-#workspace 10 output $secondMonitor
-#workspace 88 output $firstMonitor
-#workspace 99 output $secondMonitor
+workspace 5 output $firstMonitor
+workspace 6 output $secondMonitor
+workspace 7 output $secondMonitor
+workspace 8 output $secondMonitor
+workspace 9 output $secondMonitor
+workspace 10 output $secondMonitor
+workspace 88 output $firstMonitor
+workspace 99 output $secondMonitor
 
 
 # switch to workspace
