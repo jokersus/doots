@@ -58,7 +58,8 @@ module-margin-left = 3
 module-margin-right = 3
 
 font-0 = "Ubuntu Nerd Font:style=Regular:size=10:antialias=true;1"
-font-2 = "MaterialIcons-Regular:style=Regular:size=10:antialias=true;0"
+font-1 = "Font Awesome 5 Free:size=10;1"
+font-2 = "Font Awesome 5 Free:size=10:style=Solid"
 ;font-1 = "Material Icons:style=Regular:size=12:antialias=true;3"
 ;font-2 = "Material Icons:style=Regular:size=10:antialias=true;2"
 ;font-2 = "Weather Icons:size12;0"
@@ -136,7 +137,7 @@ label-urgent-padding = 4
 type = internal/cpu
 interval = 2
 ;format-prefix = "%{T2} "
-format-prefix = "%{T2} "
+format-prefix = " "
 ;format-prefix = "%{T2} "
 ;format-prefix = "C "
 format-prefix-foreground = ${colors.foreground-alt}
@@ -149,7 +150,7 @@ interval = 2
 ; format-prefix = %{T2}
 ; format-prefix = "%{T2} "
 ; format-prefix-font = 1
-format-prefix = "M "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #00000000
 label = %percentage_used%%
@@ -210,7 +211,7 @@ type = internal/network
 interface = wlp42s0f3u3
 interval = 3.0
 
-label-connected = %downspeed%  %upspeed%
+label-connected =  %downspeed%  %upspeed%
 
 format-packetloss = <animation-packetloss> <label-connected>
 
