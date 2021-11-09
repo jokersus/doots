@@ -27,6 +27,9 @@ alias ranger='ranger --choosedir=/tmp/.rangerdir; cd (cat /tmp/.rangerdir)'
 export EDITOR=vim
 export TERMINAL=urxvtc
 
+# This is magic
+# export TERM=rxvt-unicode-256color
+
 function __fish_command_not_found_handler --on-event fish_command_not_found
     echo "fish: Unknown command '$argv'"
 end
