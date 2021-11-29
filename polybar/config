@@ -35,7 +35,7 @@ height = 36
 radius = 0.0
 fixed-center = true
 
-monitor = eDP
+;monitor = eDP
 
 separator = |
 
