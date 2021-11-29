@@ -1,0 +1,9 @@
+configuration {               
+	modi: 			"combi,window,drun,ssh";
+	font: 			"source code pro medium 10";
+	terminal:		"urxvtc";
+	fixed-num-lines:	true;
+}
+
+@theme "~/.cache/wal/colors-rofi-light.rasi"
+
