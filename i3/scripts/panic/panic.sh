@@ -11,5 +11,4 @@ i3-msg 'workspace 99; exec urxvtc -e nvtop; exec urxvtc -e htop'
 killall polybar
 
 # Mute active sink
-SINK=$(pactl list short | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,')
-pactl set-sink-mute $SINK on
+pactl set-sink-mute @DEFAULT_SINK@ on
