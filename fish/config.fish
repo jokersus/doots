@@ -9,7 +9,8 @@ bind \e\x7F 'backward-kill-word'
 bind \e\b 'backward-kill-word'
 set -g theme_show_exit_status yes
 set -g theme_color_scheme terminal2
-set TERM xterm
+#set TERM xterm
+set TERM xterm-256color
 
 # aliases
 alias meow "cat"
@@ -29,7 +30,8 @@ export EDITOR=vim
 export TERMINAL=urxvtc
 
 # This is magic
-# export TERM=rxvt-unicode-256color
+#export TERM=rxvt-unicode-256color
+#export TERM=xterm-256color
 
 function __fish_command_not_found_handler --on-event fish_command_not_found
     echo "fish: Unknown command '$argv'"
