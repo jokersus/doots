@@ -16,8 +16,8 @@ set TERM xterm-256color
 alias meow "cat"
 alias paclast "expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n "
 alias l "ls -lha"
-alias rm "rm -I"
-alias ls "exa --group-directories-first --icons"
+alias rm "rm -vI"
+alias ls "exa --group-directories-first --icons --classify"
 alias cp "rsync -azhvP"
 
 # ranger cd
