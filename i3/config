@@ -14,6 +14,8 @@
 
 set $mod Mod4
 
+set $wallpaper /home/jokersus/Pictures/Wallpapers/random/moon_sunset_landscape_by_rmradev_ddndhsu.png
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
@@ -45,9 +47,9 @@ bindsym Mod1+Shift+q kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+d exec rofi -show window
-bindsym Mod1+d exec fd . ~/Documents/ ~/Videos/ ~/Pictures/ | rofi -dmenu -sorting-method fzf -i -sort | xargs -I {} xdg-open "{}"
-bindsym Mod1+Shift+d exec fd --type d . ~/ | rofi -dmenu -sorting-method fzf -i -sort | xargs -I {} urxvtc -cd "{}"
-# bindsym $mod+Shift+d exec rofi -show find -modi find:~/.config/rofi/scripts/finder.sh
+bindsym Mod1+d exec fd --one-file-system . ~/Documents/ ~/Videos/ ~/Pictures/ | rofi -dmenu -sorting-method fzf -i -sort | xargs -I {} xdg-open "{}"
+bindsym Mod1+Shift+d exec fd --one-file-system --type d . ~/ | rofi -dmenu -sorting-method fzf -i -sort | xargs -I {} urxvtc -cd "{}"
+# bindsym $mod+Shift+d exec rofi --one-file-system -show find -modi find:~/.config/rofi/scripts/finder.sh
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -139,16 +141,14 @@ workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
 workspace 3 output $firstMonitor
 workspace 4 output $firstMonitor
-#workspace 3 output $firstMonitor
-#workspace 4 output $firstMonitor
-#workspace 5 output $firstMonitor
-#workspace 6 output $secondMonitor
-#workspace 7 output $secondMonitor
-#workspace 8 output $secondMonitor
-#workspace 9 output $secondMonitor
-#workspace 10 output $secondMonitor
-#workspace 88 output $firstMonitor
-#workspace 99 output $secondMonitor
+workspace 5 output $firstMonitor
+workspace 6 output $secondMonitor
+workspace 7 output $secondMonitor
+workspace 8 output $secondMonitor
+workspace 9 output $secondMonitor
+workspace 10 output $secondMonitor
+workspace 88 output $firstMonitor
+workspace 99 output $secondMonitor
 
 
 # switch to workspace
@@ -235,7 +235,7 @@ mode "resize"
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+x exec i3lock -t -i ~/Pictures/Wallpapers/49mmoe8eum531_blur.png
+bindsym $mod+x exec i3lock -t -i $wallpaper
 
 # bindsym --release Print exec scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
 
@@ -265,19 +265,23 @@ exec --no-startup-id mpd
 # exec --no-startup-id wal -i /home/jokersus/Pictures/wallhaven-8396gk.jpg
 # exec --no-startup-id wal -i /home/jokersus/Pictures/wallpaper_3.jpg
 
-exec_always --no-startup-id "~/.config/i3/scripts/i3-alternating-layout/alternating_layouts.py &>> ~/Documents/i3script.laaaaaag"
+exec_always --no-startup-id "~/.config/i3/scripts/i3-alternating-layout/alternating_layouts.py"
 
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 2 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # MPD audio controls
 bindsym XF86AudioPlay exec "mpc toggle"
 bindsym XF86AudioStop exec "mpc stop"
 bindsym XF86AudioNext exec "mpc next"
 bindsym XF86AudioPrev exec "mpc prev"
+
+# Brightness controls
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
