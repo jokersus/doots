@@ -33,7 +33,7 @@ URxvt.letterSpace: -1
 !URxvt.font:            xft:Source Code Pro:autohint=true:size=12
 
 !URxvt.font:            xft:DejaVu Sans Mono:autohint=true:size=12,                  xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:Source Code Pro:autohint=true:size=12
-URxvt.font:            xft:DejaVu Sans Mono:autohint=true:size=12,                  xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:Source Code Pro:autohint=true:size=12, xft:TerminessTTFNerdFontMono:size=15
+URxvt.font:            xft:DejaVu Sans Mono:autohint=true:size=12,                  xft:FiraCode Nerd Font:style=Regular:autohint=true:size=12, xft:Source Code Pro:autohint=true:size=12, xft:TerminessTTFNerdFontMono:size=15
 !URxvt.boldFont:        xft:DejaVu Sans Mono:autohint=true:style=Bold:size=12,       xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:source code pro medium:autohint=true:size=12
 !URxvt.italicFont:      xft:DejaVu Sans Mono:autohint=true:stlye=Oblique:size=12     xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:source code pro medium:autohint=true:size=12
 !URxvt.boldItalicFont:  xft:DejaVu Sans Mono:autohint=true:style=BoldObliquesize=12, xft:FuraCode Nerd Font:style=Regular:autohint=true:size=12, xft:source code pro medium:autohint=true:size=12
