@@ -147,9 +147,20 @@ workspace 7 output $secondMonitor
 workspace 8 output $secondMonitor
 workspace 9 output $secondMonitor
 workspace 10 output $secondMonitor
+
+workspace 11 output $firstMonitor
+workspace 12 output $firstMonitor
+workspace 13 output $firstMonitor
+workspace 14 output $firstMonitor
+workspace 15 output $firstMonitor
+workspace 16 output $secondMonitor
+workspace 17 output $secondMonitor
+workspace 18 output $secondMonitor
+workspace 19 output $secondMonitor
+workspace 20 output $secondMonitor
+
 workspace 88 output $firstMonitor
 workspace 99 output $secondMonitor
-
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
