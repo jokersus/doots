@@ -16,6 +16,7 @@ alias l "ls -lha"
 alias rm "rm -vI"
 alias ls "exa --group-directories-first --icons --classify"
 alias cp "rsync -azhvP"
+alias pogman "podman"
 
 # ranger cd
 # See https://github.com/limakzi/fisher-ranger-cd
