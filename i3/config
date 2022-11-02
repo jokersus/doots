@@ -246,7 +246,8 @@ mode "resize"
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+x exec i3lock -t -i $wallpaper
+#bindsym $mod+x exec i3lock -t -i $wallpaper
+bindsym $mod+x exec --no-startup-id ~/.config/i3/scripts/dunst-pause.sh $wallpaper
 
 # bindsym --release Print exec scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
 
