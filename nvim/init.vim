@@ -8,7 +8,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 
 " Group dependencies, vim-snippets depends on ultisnips
-"  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -56,6 +56,11 @@ Plug 'tpope/vim-surround'
 " Conflict marker
 Plug 'rhysd/conflict-marker.vim'
 
+" IDE Stuff
+Plug 'vim-scripts/indentLine.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
 """""""""""""""""""""""""""
@@ -64,6 +69,8 @@ set number
 set ignorecase
 set smartcase
 set nornu
+
+set ts=4 sw=4
 
 " Plugin config
 " nnoremap <Tab> :NERDTreeToggle<CR>
@@ -228,3 +235,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+nnoremap <Tab> :NERDTreeToggle<CR>
+autocmd VimEnter * LeadingSpaceEnable
+set list lcs=tab:\|\ 
+let indentLine_leadingSpaceChar = '·'
