@@ -45,10 +45,10 @@ bindsym $mod+Shift+q kill
 bindsym Mod1+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show drun -drun-use-desktop-cache
 bindsym $mod+Shift+d exec rofi -show window
 bindsym Mod1+d exec fd --one-file-system . ~/Documents/ ~/Videos/ ~/Pictures/ | rofi -dmenu -sorting-method fzf -i -sort | xargs -I {} xdg-open "{}"
-bindsym Mod1+Shift+d exec fd --one-file-system --type d . ~/ | rofi -dmenu -sorting-method fzf -i -sort | xargs -I {} urxvtc -cd "{}"
+bindsym Mod1+Shift+d exec fd --one-file-system --type d . ~/bin/ ~/Desktop/ ~/Documents/ ~/Downloads/ ~/Music/ ~/Pictures/ ~/Videos/ | rofi -dmenu -sorting-method fzf -i -sort | xargs -I {} urxvtc -cd "{}"
 # bindsym $mod+Shift+d exec rofi --one-file-system -show find -modi find:~/.config/rofi/scripts/finder.sh
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
