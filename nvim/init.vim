@@ -236,6 +236,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 nnoremap <Tab> :NERDTreeToggle<CR>
-autocmd VimEnter * LeadingSpaceEnable
+" autocmd VimEnter * LeadingSpaceEnable
 set list lcs=tab:\|\ 
 let indentLine_leadingSpaceChar = '·'
